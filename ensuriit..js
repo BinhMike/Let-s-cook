@@ -103,7 +103,6 @@ async function fetchFavMeals() {
         meal = await getMealById(mealId);
 
         
-        meals.push(meal);
     }
 
     console.log(meals);
