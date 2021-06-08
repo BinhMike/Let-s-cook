@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esuriit Project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="ensuriit.css" />
     <script src="ensuriit.js" defer></script>
 </head>
-<body>
-    <div class="mobile-container"
-        <header>
-            <input type="text" >
-            <button id="search">Search</button>
+    <body>
+        <div class="mobile-container">
+            <header>
+                <input type="text" 
+                id="search-term"/>
+                <button id="search"><i class="fas fa-search"></i></button>
 
-        </header>
-        <div class="fav-container"
-            <h3>Favourite Meals</h3>
-            <ul>
-                  <li><img src="https://www.themealdb.com/images/ingredients/Lime.png"
-                  alt=""><span>Lime</span></li>
-                  <li><img src="https://www.themealdb.com/images/media/meals/11cbn01574260722.jpg/preview"
-                  alt=""><span>Carbonara</span></li>
-                  <li><img src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg"
-                  alt=""><span>Lasagna</span></li>
-
-            </ul>
+            </header>
+        
+            <div class="fav-container">
+                <h3>Favourite Meals</h3>
+                <ul class="fav-meals" id="fav-meals">
+                    <!-- <li><img src="https://www.themealdb.com/images/ingredients/Lime.png"
+                    alt=""><span>Lime</span></li>
+                    <li><img src="https://www.themealdb.com/images/media/meals/11cbn01574260722.jpg/preview"
+                    alt=""><span>Carbonara</span></li>
+                    <li><img src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg"
+                    alt=""><span>Lasagna</span></li> -->
+                  <!-- luc sau no xoa het phan nay 2 tieng 29 phut 30s -->
+                </ul>
+            </div>
+            <div class="meals" id="meals"><</div>
         </div>
-        <div class="meals" >
-            <div class="meals">
-                <span class="random">
-                    Random recipe
-                </span>
-                <div class="meals-header">
-                    <img src="" alt="">
-                </div>
-                <div class="meal-body">
-                    <h4> Vegie vegies</h4>
-                    <button>
-                        <i class="fa fa-heart"></i>
-                    </button>                
-                </div>
+        
+        <div class="popup-container hidden" 
+        id="meal-popup">
+            <div class="popup">
+                <button id="close-popup"
+                class ="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="meal info"
+                id="meal-info"></div>        
             </div>
         </div>
-    </div>
-
-    
-</body>
+    </body>
 </html> 
