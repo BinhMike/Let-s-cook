@@ -197,33 +197,39 @@ async function fetchFavMeals() {
 
 
 
+function showMealInfo(mealData) {
+    // clean it up
+    mealInfoEl.innerHTML = "";
+    // update the meal info
+    const mealEL = document.createElement("div")
 
+    const ingredients = [];
+    // get ingredients and measure
+    for(let i = 1; i <= 20; i++) {}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function addMealFav(mealData) {
-    const favMeal = document.createElement("li");
-
-    favMeal.innerHTML
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
