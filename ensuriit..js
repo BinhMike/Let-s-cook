@@ -205,10 +205,67 @@ function showMealInfo(mealData) {
 
     const ingredients = [];
     // get ingredients and measure
-    for(let i = 1; i <= 20; i++) {}
+    for(let i = 1; i <= 20; i++) {
+        if(mealData["strIngredient" + i])   {
+            ingredients.push(
+                `${mealData["strIngredient" + i]}
+                - ${
+                    mealData["strMeasure" + i]
+
+                }`
+
+            );
+        } else {
+            break;
+        }
+    }
+
+    mealEL.innerHTML = `
+        <h1>${mealData.strMeal}</h1>
+        <img
+            src="${mealData.strMealThumb}"
+            alt="${mealData.strMeal}"
+        />
+        <p>
+        ${mealData.strInstructions}
+        </p>
+        <h3> Ingredients : </h3>
+        <ul>
+            ${ingredients
+                .map(
+                    (ing) => `
+                    <li>${ing}</li>
+                    `
+                        )
+                )       .join("")}
+        </ul>
+        
+        `;
+        
+    mealInfoEl.appendChild(mealEL);
+
+    // show the popup
+    mealPopup.classList.remove("hidden")
 
 }
 
+searchBtn.addEventListener("click", async () => {
+    // clean container
+    mealsEL.innerHTML = "";
+
+    const search = searchTerm.value;
+    const meals = await getMealsBySearch(search);
+    if(meals {
+        meals.forEach(meal) => {
+            addMeal(meal);
+        });
+    }
+        
+});
+
+popupCloseBtn.addEventListener("click", () => {
+    mealPopup.classList.add("hidden");
+});
 
 
 
