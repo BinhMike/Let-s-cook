@@ -195,7 +195,7 @@ function showMealInfo(mealData) {
     mealInfoEl.appendChild(mealEL);
 
     // show the popup
-    mealPopup.classList.remove("hidden")
+    mealPopup.classList.remove("hidden");
 
 }
 
