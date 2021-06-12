@@ -189,3 +189,167 @@ section.highlight {
 #recipe .content li {
     margin-left: 15px;
 }
+
+img {
+    max-width: 100%;
+} 
+
+.mobile-container {
+    background-color: rgb(228, 164, 46);
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 4000px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header .home {
+    margin-right: auto;
+    font-size: 2em;
+    text-decoration: none;
+    color: darkgray;
+}
+
+header input {
+    background-color: orangered;
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: rgb(170, 170, 170);
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.fav-container {
+    background-color: rgb(rgb(0, 255, 255), green, blue);
+    padding: 2rem  1rem;
+    text-align: center;
+}
+
+.fav-meals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.fav-meals li {
+    position: relative;
+    margin: 5px;
+    width: 75px;
+}
+
+.fav-meals li .clear {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    font-size: 1.2rem;
+}
+
+.fav-meals li img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #4424241a;
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+}
+
+.fav-meals li span {
+    font-size: 0.9rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75px;
+    color: black;
+}
+
+.active img {
+    border: 2px solid purple !important;
+}
+
+section.highlight {
+    padding: 10px 50px;
+}
+
+#recipe {
+    height: 400px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#blur {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, 
+    rgba(255,255,255, 0), 
+    rgba(255,255,255, 1) 90%);
+    pointer-events: none;
+    width: 90%;
+    height: 4em;
+}
+
+
+#heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+#heart:hover {
+    color: orangered;
+}
+
+#recipe #expand {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+#recipe #expand * {
+    cursor: pointer;
+}
+
+#recipe img {
+    width: 50%;
+    object-fit: cover;
+}
+
+#recipe .content {
+    width: 50%;
+    padding: 10px;
+}
+
+#recipe .content li {
+    margin-left: 15px;
+}

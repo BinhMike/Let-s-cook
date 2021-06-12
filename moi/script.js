@@ -3,7 +3,7 @@ button.addEventListener('click', () => {
     const customerInput = document.getElementById('customerInput');
     const row = document.getElementById('row');
 
-    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${customerInput.value}`)
+    fetch(https://www.themealdb.com/api/json/v1/1/search.php?s=${customerInput.value})
         .then(response => response.json())
         .then(data => {
             let html = " ";
@@ -31,7 +31,7 @@ button.addEventListener('click', () => {
 row.addEventListener('click', (event) => {
     const idFind = event.target;
     const detailsId = idFind.dataset.id;
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${detailsId}`)
+    fetch(https://www.themealdb.com/api/json/v1/1/lookup.php?i=${detailsId})
         .then(response => response.json())
         .then(data => {
             const details = document.getElementById('details');

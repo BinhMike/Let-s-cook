@@ -3,7 +3,7 @@ img {
 } 
 
 .mobile-container {
-    background-color: rgb(228, 164, 46)
+    background-color: rgb(228, 164, 46);
     box-shadow: 0 0 10px 2px #3333331a;
     border-radius: 3px;
     overflow: hidden;
@@ -25,7 +25,7 @@ header .home {
 }
 
 header input {
-    background-color: #eee;
+    background-color: orangered;
     border: none;
     border-radius: 3px;
     font-family: inherit;
