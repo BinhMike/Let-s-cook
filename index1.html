@@ -2,124 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tipsy Bartender</title>
-  <link rel="stylesheet" href="index.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-  <body style="background-color: #FFC0CB" ; </body>
-    <br> <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    </br>
-    <h2><em><span style="font-family: Tahoma,Geneva, sans-serif;"><strong><span style="color: rgb(209, 72, 65);">TIPSY
-              BARTENDER</span></strong></span></em></h2>
-
-    <p><em><span style="font-family: Courier New, courier;">"You can&apos;t buy happiness but you can prepare a cocktail
-          and that&apos;s kind of the same thing."</span></em></p>
-
-
-    <div class="navbar">
-      <input type="text" placeholder="Search..">
-      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="#"><i class="fa fa-fw fa-search"></i> Calories </a> <a href="calories.html"> Calories</a>
-      <a href="#"><i class="fa fa-fw fa-envelope"></i> Recipes </a>
-      <a href="#"><i class="fa fa-fw fa-user"></i> About us </a>
-      <a href="#"><i class="fa fa-fw fa-user"></i> Contact </a>
+    <div class="container text-center" style="margin-top: 20px;">
+        <input type="text" id="customerInput" placeholder="Item to Search" autocomplete="off" />
+        <button id="search">Search</button>
     </div>
 
-    <main>
-      <!-- <section class="slides-content">
-        <div class="slideshow">
-          <div class="slideshow-item">
-            <img src="https://b.zmtcdn.com/data/pictures/5/18617755/e629e2d76508ff56433cd6e0fce549a8.jpg"> </img>
-            <div class="slideshow-item__content">
-              <h3>Không quan trọng bạn bắt đầu từ đâu</h3>
-              <p>Thể trạng - Tuổi tác - Giới tính</p>
-            </div>
-          </div>
-
-          <div class="slideshow-item">
-            <img src="picture/runner handicap.jpg" alt="img">
-            <div class="slideshow-item__content">
-              <h3>Chỉ cần bạn quyết tâm</h3>
-              <p>Ý chí - Chăm chỉ - Bền bỉ</p>
-            </div>
-          </div>
-
-          <div class="slideshow-item">
-            <img src="picture/muscleboy.jpeg" alt="img">
-            <div class="slideshow-item__content">
-              <h3>Uống một ly say cả đời</h3>
-              <p>bar và bóng</p>
-            </div>
-          </div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="row" id="row">
         </div>
-      </section> -->
+    </div>
 
-      <div class="slider">
-
-        
-
-        <div class="slides">
-          <div id="slide-1">
-            <img src="https://toplisthanoi.com/wp-content/uploads/2019/10/bar-binh-dan-ha-noi-6..jpg" alt="">
-          </div>
-          <div id="slide-2">
-            <img src="https://hanoi1000.vn/wp-content/uploads/2019/08/cac-quan-bar-o-ha-noi.jpg" alt="">
-          </div>
-          <div id="slide-3">
-            3
-          </div>
-          <div id="slide-4">
-            4
-          </div>
-          <div id="slide-5">
-            5
-          </div>
+    <div class="container">
+        <div class="text-center text-center">
+            <div class="text-center">
+                <div id="details" class="box" style=" position: absolute; top: 100px;left:30%;margin: auto;height: auto;width: 40%; background-color:#b7babd;">
+                </div>
+            </div>
         </div>
-        <a href="#slide-1">1</a>
-        <a href="#slide-2">2</a>
-        <a href="#slide-3">3</a>
-        <a href="#slide-4">4</a>
-        <a href="#slide-5">5</a>
-      </div>
+    </div>
+    <div class="fav-container">
+            <h3>Favourite Meals</h3>
+            <ul class="fav-meals" id="fav-meals">
+                <li>
+                    <a href="./lime.html">
+                        <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="">
+                        <span>Lime</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://post.healthline.com/wp-content/uploads/2021/02/lobster-732x549-thumbnail-732x549.jpg"
+                            alt="">
+                        <span>Lobster</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://cdn.tgdd.vn/Files/2020/06/04/1260722/cach-lam-mi-y-carbonara-don-gian-thom-ngon-beo-n.jpeg"
+                            alt="">
+                        <span>Carbonara</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg"
+                            alt=""><span>Lasagna</span>
+                    </a>
+                </li>
+            </ul>
+    <script src="js/script.js"></script>
+</body>
 
-      // also log in section 
-      <script type='text/javascript' src='https://tipsybartender.com/wp-includes/js/wp-embed.min.js?ver=5.7.2' id='wp-embed-js'></script>
-      <script type='text/javascript' src='https://cdn.auth0.com/js/lock/11.16/lock.min.js?ver=5.7.2' id='wpa0_lock-js'></script>
-      <script type='text/javascript' src='https://tipsybartender.com/wp-content/plugins/auth0/assets/lib/js.cookie.min.js?ver=2.2.0' id='js-cookie-js'></script>
-      
-      
-      // This is log in section 
-      <script type='text/javascript' id='wpa0_lock_init-js-extra'>
-      /* <![CDATA[ */
-      var wpAuth0LockGlobal = {"settings":{"auth":{"params":{"state":"eyJpbnRlcmltIjpmYWxzZSwibm9uY2UiOiI3ZGQyMmU3YmMwNTc0NWE4MjRmZmEwYjk2MTAzOWM2ZWQ1NGI4NjBlMTkzODc0OWY3OTdiMDZjYjU3ZjIyYWExIiwicmVkaXJlY3RfdG8iOiJodHRwczpcL1wvdGlwc3liYXJ0ZW5kZXIuY29tXC8ifQ==","scope":"openid email profile"},"responseType":"code","redirectUrl":"https:\/\/tipsybartender.com\/index.php?auth0=1","sso":false},"configurationBaseUrl":"https:\/\/cdn.auth0.com","languageDictionary":{"title":"\u00a0Login to Tipsy Bartender"},"socialButtonStyle":"big","avatar":true,"theme":{"logo":"https:\/\/tipsybartender.com\/wp-content\/themes\/tipsy-theme\/assets\/images\/logo-small.png","primaryColor":"#3796db"},"container":"auth0-login-form"},"ready":"1","domain":"auth.tipsybartender.com","clientId":"J6s8g1LQ95FsnUJPY5dTubneLbylo5dW","stateCookieName":"auth0_state","nonceCookieName":"auth0_nonce","usePasswordless":"","loginFormId":"auth0-login-form","showAsModal":"","ssoOpts":null,"i18n":{"notReadyText":"Auth0 is not configured","cannotFindNodeText":"Auth0 cannot find node with id ","modalButtonText":"Login"}};
-      /* ]]> */
-      </script>
-      
-      // can't delete
-      <script type='text/javascript' src='https://tipsybartender.com/wp-content/plugins/auth0/assets/js/lock-init.js?ver=3.11.1' id='wpa0_lock_init-js'></script>
-      <script>
-          window.lazyLoadInstance = new window.LazyLoad({
-              elements_selector: ".lazy",
-              callback_error: (el) => {
-                  const clonedData = JSON.parse(JSON.stringify(el.dataset));
-                  let errorSrc = window.fixCdnUrl(clonedData.src);
-                  el.src = errorSrc;
-                  
-                  if (el.classList.contains('ingredient-img')) {
-                      el.src = "/wp-content/themes/tipsy-theme/assets/images/ingredient-blank.svg";
-                  }
-              }
-          });
-          window.lazyLoadBackgrounds();
-      </script>
-      <script>loadjs("/wp-content/themes/tipsy-theme/assets/dist/main-after.js?cb=4981");</script><script>
-          window.lazyLoadInstance.loadIframes();
-      </script>
-
-      <div id="auth0-login-form"><div data-reactroot="" class="auth0-lock auth0-lock-opened-in-frame auth0-lock-with-tabs" lang="en"><div class="auth0-lock-center"><form class="auth0-lock-widget" method="post"><div class="auth0-lock-widget-container"><div class="auth0-lock-cred-pane auth0-lock-quiet"><div class="auth0-lock-cred-pane-internal-wrapper"><div class="auth0-lock-header"><div class="auth0-lock-header-bg auth0-lock-blur-support"><div class="auth0-lock-header-bg-blur" style="background-image: url(&quot;"></div><div class="auth0-lock-header-bg-solid" style="background-color: rgb(55, 150, 219);"></div></div><div class="auth0-lock-header-welcome"><img alt="" class="auth0-lock-header-logo" src=<div class="auth0-lock-name" title="&nbsp;Login to Tipsy Bartender">&nbsp;Login to Tipsy Bartender</div></div></div><div class="auth0-lock-content-wrapper"><div><div></div></div><div style="position: relative;"><span><div class="" style=""><div style="visibility: inherit;"><div class="auth0-lock-view-content"><div style="position: relative;"><div class="auth0-lock-body-content"><div class="auth0-lock-content"><div class="auth0-lock-form"><div><div role="navigation" class="auth0-lock-tabs-container"><ul class="auth0-lock-tabs"><li class="auth0-lock-tabs-current"><span>Log In</span></li><li class=""><a href="javascript:void(0)">Sign Up</a></li></ul></div><div><div class="auth-lock-social-buttons-pane"><div class="auth0-lock-social-buttons-container"><button class="auth0-lock-social-button auth0-lock-social-big-button" data-provider="facebook" type="button"><div class="auth0-lock-social-button-icon"></div><div class="auth0-lock-social-button-text">Log in with Facebook</div></button><button class="auth0-lock-social-button auth0-lock-social-big-button" data-provider="google-oauth2" type="button"><div class="auth0-lock-social-button-icon"></div><div class="auth0-lock-social-button-text">Log in with Google</div></button></div></div><div class="auth0-lock-pane-separator"></div><div><p><span>or</span></p><div class="auth0-lock-input-block auth0-lock-input-email"><div class="auth0-lock-input-wrap auth0-lock-input-wrap-with-icon"><span aria-hidden="true"><svg aria-hidden="true" focusable="false" width="14px" height="13px" viewBox="0 0 32 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" class="auth0-lock-icon auth0-lock-icon-box"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="32px" sketch:type="MSLayerGroup" transform="translate(-2155.000000, -2317.000000)" fill="#373A39"><g id="Group-856" transform="translate(1.000000, 1.000000)" sketch:type="MSShapeGroup"><path id="Fill-419" d="M2184,2339 C2184,2339.55 2183.55,2340 2183,2340 L2157,2340 C2156.45,2340 2156,2339.55 2156,2339 L2156,2319 C2156,2318.45 2156.45,2318 2157,2318 L2183,2318 C2183.55,2318 2184,2318.45 2184,2319 L2184,2339 L2184,2339 Z M2184,2316 L2156,2316 C2154.89,2316 2154,2316.89 2154,2318 L2154,2340 C2154,2341.1 2154.89,2342 2156,2342 L2184,2342 C2185.1,2342 2186,2341.1 2186,2340 L2186,2318 C2186,2316.89 2185.1,2316 2184,2316 L2184,2316 Z M2176,2322 L2180,2322 L2180,2326 L2176,2326 L2176,2322 Z M2174,2328 L2182,2328 L2182,2320 L2174,2320 L2174,2328 Z M2158,2332 L2172,2332 L2172,2330 L2158,2330 L2158,2332 Z M2158,2336 L2172,2336 L2172,2334 L2158,2334 L2158,2336 Z"></path></g></g></g></svg></span><input type="email" id="1-email" name="email" class="auth0-lock-input" placeholder="yours@example.com" autocomplete="off" autocapitalize="off" aria-label="Email" aria-invalid="false" value=""></div></div><div class="auth0-lock-input-block auth0-lock-input-show-password"><div class="auth0-lock-input-block auth0-lock-input-password"><div class="auth0-lock-input-wrap auth0-lock-input-wrap-with-icon"><span aria-hidden="true"><svg aria-hidden="true" focusable="false" width="11px" height="14px" viewBox="0 0 13 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="auth0-lock-icon auth0-lock-icon-box"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-288.000000, -1508.000000)" fill="#888888"><path d="M299,1523.998 L290,1523.998 C288.896,1523.998 288,1523.102 288,1521.999 L288,1515.999 C288,1514.895 288.896,1513.998 290,1513.998 L290,1513.998 L290,1512.499 C290,1510.015 292.015,1507.999 294.5,1507.999 C296.985,1507.999 299,1510.015 299,1512.499 L299,1513.999 C300.104,1513.999 301,1514.895 301,1515.999 L301,1521.999 C301,1523.103 300.104,1523.998 299,1523.998 L299,1523.998 Z M298,1512.499 C298,1510.566 296.433,1508.999 294.5,1508.999 C292.567,1508.999 291,1510.566 291,1512.499 L291,1513.998 L298,1513.998 L298,1512.499 L298,1512.499 Z M300,1515.999 C300,1515.446 299.552,1514.998 299,1514.998 L290,1514.998 C289.447,1514.998 289,1515.446 289,1515.999 L289,1521.999 C289,1522.551 289.447,1522.998 290,1522.998 L299,1522.998 C299.552,1522.998 300,1522.551 300,1521.999 L300,1515.999 L300,1515.999 Z M294.5,1520.998 C294.224,1520.998 294,1520.774 294,1520.498 L294,1517.498 C294,1517.223 294.224,1516.999 294.5,1516.999 C294.776,1516.999 295,1517.223 295,1517.498 L295,1520.498 C295,1520.774 294.776,1520.998 294.5,1520.998 L294.5,1520.998 Z"></path></g></g></svg></span><input type="password" name="password" class="auth0-lock-input" autocomplete="off" autocapitalize="off" value="" aria-label="Password" aria-invalid="false" placeholder="your password"></div></div></div><p class="auth0-lock-alternative"><a class="auth0-lock-alternative-link" href="javascript:void(0)">Don't remember your password?</a></p></div></div></div></div></div></div></div></div></div></div></span></div></div><button class="auth0-lock-submit" name="submit" type="submit" aria-label="Log In" style="background-color: rgb(55, 150, 219); display: block;"><div class="auth0-loading-container"><div class="auth0-loading"></div></div><span class="auth0-label-submit"><!-- react-text: 32 -->Log In<!-- /react-text --><span><svg aria-hidden="true" focusable="false" class="icon-text" width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Web/Submit/Active" transform="translate(-148.000000, -32.000000)" fill="#FFFFFF"><polygon id="Shape" points="148 33.4 149.4 32 155.4 38 149.4 44 148 42.6 152.6 38"></polygon></g></g></svg></span></span></button></div></div></div></form></div></div></div>
+</html>
